@@ -1,0 +1,140 @@
+
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Misbah Collection - Ladies Store</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f5f0;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #8b0000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .sale-banner {
+            background-color: gold;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        .product-image {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #8b0000;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: gray;
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #8b0000;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #a22525;
+        }
+
+        .whatsapp {
+            background-color: green;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            background-color: #8b0000;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    Misbah Collection
+</header>
+
+<div class="sale-banner">
+    🔥 BUY 1 GET 1 FREE - 2 Sets @ ₹1500 🔥
+</div>
+
+<div class="container">
+    <img class="product-image" src="https://i.imgur.com/3kwUckw.jpg" />
+
+    <h2>White Cutwork Designer Kurti Set</h2>
+
+    <p>Available Sizes: M - L - XL</p>
+
+    <p>
+        Beautiful cutwork lace design perfect for parties & functions.
+        Premium quality fabric with elegant finish.
+    </p>
+
+    <p class="price">
+        <span class="old-price">₹2500</span> ₹1500
+    </p>
+
+    <button>Add to Cart</button>
+
+    <button class="whatsapp" onclick="orderNow()">
+        Order on WhatsApp
+    </button>
+</div>
+
+<footer>
+    📍 Misbah Collection - Himmatnagar  
+    📞 WhatsApp: 8696341508
+</footer>
+
+<script>
+function orderNow() {
+    let message = "Hello, I want to order White Cutwork Kurti Set";
+    let url = "https://wa.me/918696341508?text=" + encodeURIComponent(message);
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
