@@ -1,2 +1,4 @@
 # Hfz-own-store-.
-Assalamualaikum welcome resellar 💯 
+body {
+    background-color: #fff0f5;
+}
